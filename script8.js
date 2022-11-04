@@ -33,3 +33,29 @@ if (personalMovieDB.count < 10) {
 }
 
 console.log(personalMovieDB);
+
+
+// // First
+// let x = 0;
+// while (x < 1){
+//     const   a = prompt('Последний фильм?', ''),
+//             b = +prompt('Ваша оценка?', '');
+//     if(a != null && b != null && a != '' && b != '' && a.length < 50){
+//     // Если а не "отмена" и b не "отмена" и a не пустая строка и b не пустая строка и а < 50 символов то
+//     personalMovieDB.movies[a] = b;
+//     console.log("Done!");
+//     } else {
+//         console.log("Error");
+//         x--;
+//     }
+//     x++;
+// }
+// // Second
+// let x = 0;
+// while (x < 1){
+//     const   a = prompt('Последний фильм?', ''),
+//             b = +prompt('Ваша оценка?', '');
+//     (a != null && b != null && a != '' && b != '' && a.length < 50) ? personalMovieDB.movies[a] = b : x--,
+// 		console.log("Error");
+//     x++;
+// }
