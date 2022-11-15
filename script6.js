@@ -22,6 +22,23 @@ for (let i = 1; i < 10; i++) {		// Loops
 }
 
 
+let obj = {
+	"name": "Petr",
+	"age": 25,
+	"number": 313123122414123
+};
+
+for (let key in obj) {
+	console.log(`Ключ ${key}, Значение ${obj[key]}`);
+}
+
+let arr = [5, 7, 9, 1, 0];
+arr.forEach(function (item, i, array) {
+	console.log(`Элемент: ${item}
+	Индекс: ${i}
+	Массив: ${array}`);
+});
+
 
 
 // Цикл WHILE
