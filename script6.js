@@ -39,6 +39,79 @@ arr.forEach(function (item, i, array) {
 	Массив: ${array}`);
 });
 
+function fifthTask() {
+    const arrayOfNumbers = [];
+    for (let i = 5; i < 11; i++) {
+        arrayOfNumbers[i - 5] = i;
+    }
+    console.log(arrayOfNumbers);
+
+    return arrayOfNumbers;
+}
+
+fifthTask();
+
+function secondTask() {
+    const arr = [3, 5, 8, 16, 20, 23, 50];
+    const result = [];
+
+    for ( let i = 0; i < arr.length; i++) {
+        result[i] = arr[i];
+    }
+    console.log(result);
+    return result;
+}
+secondTask();
+
+/* ============================================================================*/
+
+function fourthsTask() {
+    const data = [5, 10, 'Shopping', 20, 'Homework'];
+    const result = [];
+        for (let i = 1; i <= data.length; i++) {
+        result[i - 1] = data[data.length - i]
+    }
+    console.log(result);
+    return result;
+}
+fourthsTask();
+
+
+// Разбираем по косточкам :-)
+// for (let i = 1; i <= data.length; i++) {
+//  result[i - 1] = data[data.length - i];
+// }
+// Запускается цикл, начальное значение i равно 1. проверяется условие, что 1  меньше, чем длина массива data ( i <= data.length), так как длина массива data равна 5, условие истинное (1 < 5), выполняется код в теле цикла (вместо i  везде подставляется 1), фактически у нас получается:
+// result[1-1] = data[5 - 1];
+// // а точнее
+// result[0] = data[4];
+// что это означает? это означает, что в массив result под индексом 0 запишется элемент из массива data с индексом 4
+// другими словами, первым элементом массива result будет последний элемент из массива data.
+// На каждой последующей итерации цикла за счёт операции пост-инкремента( i++ ) значение i будет увеличиваться на 1 каждый раз и мы будем получать
+// result[1] = data[3];
+// result[2] = data[2];
+// result[3] = data[1];
+// result[4] = data[0];
+// так массив result заполниться элементами массива data, в обратном порядке
+
+
+/* ============================================================================*/
+
+function thirdTask() {
+    const data = [5, 10, 'Shopping', 20, 'Homework'];
+        for (let i = 0; i < data.length; i++) {
+        if (typeof(data[i]) === 'number') {
+            data[i] = data[i] * 2;
+        } else if (typeof(data[i]) === 'string') {
+            data[i] = `${data[i]} - done`;
+        }
+    }
+    console.log(data);
+    return data;
+}
+thirdTask();
+
+
 
 
 // Цикл WHILE
