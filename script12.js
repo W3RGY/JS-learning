@@ -1,3 +1,18 @@
+"use strick";
+
+const str = "test";
+const arr = [1, 2, 4];
+console.log(arr.length/*property*/);		//number of lines
+console.log(str.toUpperCase()/*method*/);
+
+const fruit = "Some fruit";
+console.log(fruit.indexOf("fruit"));
+
+const logg = "Hello World";
+console.log(logg.slice(6, 11));
+console.log(logg.substring(6, 11));
+
+
 
 /*
 Запись строк. Кавычки.
