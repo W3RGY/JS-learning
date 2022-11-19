@@ -114,6 +114,16 @@ function getMathResult(num, times) {
 console.log(getMathResult(10, 5));
 
 
+let numberOfFilms;
+
+function start() {
+    numberOfFilms = +prompt("Сколько фильмов Вы уже посмотрели", '');
+console.log(numberOfFilms)
+    while (numberOfFilms === "" || numberOfFilms === null || isNaN(numberOfFilms) || numberOfFilms === 0) {
+        numberOfFilms = +prompt("Сколько фильмов Вы уже посмотрели", '');
+    }
+}
+start();
 
 
 
