@@ -1,3 +1,39 @@
+1) Ширина полосы прокрутки по Y:
+
+const width = document.documentElement;
+const mainWidth = width.clientWidth;
+const windowWidth = window.innerWidth;
+console.log(windowWidth - mainWidth);
+
+
+2) Прокрутка на 100px с задержкой в 1с:
+
+function scrollPage() {
+	window.scrollTo({
+		top: 100,
+		left: 0,
+		behavior: "smooth"
+	})
+};
+setTimeout(scrollPage, 1000);
+
+Но тут нюанс, что не сказано от верха элемента или от всей страницы, поэтому можно использовать и srcollBy()
+
+3) Получение и вывод в консоль координат трёх элементов:
+
+const elem1 = document.querySelector('.lesson');
+const elem2 = document.querySelector('.lesson__item1');
+const elem3 = document.querySelector('.lesson__item2');
+const getElem1 = elem1.getBoundingClientRect();
+const getElem2 = elem2.getBoundingClientRect();
+const getElem3 = elem3.getBoundingClientRect();
+console.log(getElem1, getElem2, getElem3);
+
+
+
+
+
+
 /*
 // WINDOW
 const windowWidth = window.innerWidth;
