@@ -1,4 +1,4 @@
-1) Ширина полосы прокрутки по Y:
+// Ширина полосы прокрутки по Y:
 
 const width = document.documentElement;
 const mainWidth = width.clientWidth;
@@ -6,7 +6,7 @@ const windowWidth = window.innerWidth;
 console.log(windowWidth - mainWidth);
 
 
-2) Прокрутка на 100px с задержкой в 1с:
+// Прокрутка на 100px с задержкой в 1с:
 
 function scrollPage() {
 	window.scrollTo({
@@ -17,9 +17,9 @@ function scrollPage() {
 };
 setTimeout(scrollPage, 1000);
 
-Но тут нюанс, что не сказано от верха элемента или от всей страницы, поэтому можно использовать и srcollBy()
+// Но тут нюанс, что не сказано от верха элемента или от всей страницы, поэтому можно использовать и srcollBy()
 
-3) Получение и вывод в консоль координат трёх элементов:
+// 3) Получение и вывод в консоль координат трёх элементов:
 
 const elem1 = document.querySelector('.lesson');
 const elem2 = document.querySelector('.lesson__item1');
