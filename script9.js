@@ -239,6 +239,21 @@ function fib(num) {
 
 fib(5)
 
+function fib(count) {
+	if (typeof (count) !== 'number' || count <= 0 || count % 1 !== 0) {
+		return '';
+	}
+	const arrNumbers = [0];
+	for (let i = 1; i < count; i++) {
+		if (i === 1){
+			arrNumbers.push(1);
+		} else {
+			arrNumbers.push(arrNumbers[i-1] + arrNumbers[i-2]);
+		}
+	}
+	return arrNumbers.join(' ');
+}
+
 
 
 
