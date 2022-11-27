@@ -192,7 +192,7 @@ function getTimeFromMinutes(minutesTotal) {
     return `Это ${hours} ${hoursStr} и ${minutes} минут`;
 }
 
-getTimeFromMinutes(180)
+getTimeFromMinutes(180);
 
 function findMaxNumber(a, b ,c, d) {
     // Самое простое - это использовать Math.max :)
@@ -237,7 +237,7 @@ function fib(num) {
     return result;
 }
 
-fib(5)
+fib(5);
 
 function fib(count) {
 	if (typeof (count) !== 'number' || count <= 0 || count % 1 !== 0) {
