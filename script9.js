@@ -254,6 +254,30 @@ function fib(count) {
 	return arrNumbers.join(' ');
 }
 
+function fib(num) {
+
+    if (typeof(num) !== 'number' || num <= 0 || !Number.isInteger(num)) {
+        return "";
+
+    }
+
+    if ( num === 1) {
+        return 0;
+    }
+
+     let arr = [0, 1];
+
+    for (let i=1; i<=num-1; i++) {
+        arr.push(arr[i-1]+arr[i]);
+
+    }
+    arr = arr.join(' ');
+
+
+    return arr;
+
+}
+
 
 
 
