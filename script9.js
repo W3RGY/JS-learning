@@ -276,7 +276,7 @@ function fib(num) {
 
     return arr;
 
-}
+};
 
 
 
