@@ -26,7 +26,6 @@ function ret() {
 	let num = 50;
 	return num;
 }
-
 const anotherNum = ret();
 console.log(anotherNum);
 
@@ -35,7 +34,6 @@ console.log(anotherNum);
 const logger = function () {
 	console.log("Hello");
 };
-
 logger();
 
 //======================================
