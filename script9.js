@@ -76,7 +76,7 @@ test();
 function doNothing() { }
 console.log(doNothing() === undefined);
 
-//======================================
+//=================================
 
 function sayHello(name) {
 	return `Привет, ${name}!`;
