@@ -147,7 +147,6 @@ function getCoupeNumber(seatNumber) {
     if (seatNumber === 0 || seatNumber > 36) {
         return "Таких мест в вагоне не существует";
     }
-
     return Math.ceil(seatNumber / 4);
     // тут очень много вариантов решения, но выбрал один из элегантных :)
 }
