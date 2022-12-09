@@ -15,7 +15,6 @@ console.log(num);
 // console.log(calc(4, 3));
 // console.log(calc(5, 6));
 // console.log(calc(10, 7));
-
 // function calc(a, b) {
 // 	return (a + b);
 // }
@@ -82,7 +81,6 @@ function sayHello(name) {
 	return `Привет, ${name}!`;
 }
 console.log(sayHello('Alex'));
-
 
 
 function returnNeighboringNumbers(num) {
