@@ -7,6 +7,7 @@ function showFirstMessage(text) {
 	num = 10;				// local variable
 }
 
+
 showFirstMessage("Hello World!");					//function call
 console.log(num);
 
