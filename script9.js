@@ -137,6 +137,8 @@ function calculateVolumeAndArea(length) {
     return `Объем куба: ${volume}, площадь всей поверхности: ${area}`;
 }
 
+
+
 calculateVolumeAndArea(5);
 
 function getCoupeNumber(seatNumber) {
