@@ -206,6 +206,7 @@ findMaxNumber(1, 5, '6', '10');
 
 
 
+
 function fib(num) {
     if (typeof(num) !== 'number' || num <= 0 || !Number.isInteger(num)) {
         return "";
